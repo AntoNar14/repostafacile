@@ -1,0 +1,68 @@
+.titolo{
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 35pt;
+}
+table {
+  width: 800pt;
+  border-collapse: collapse; /* rimuove lo spazio tra le celle */
+  margin: auto;
+}
+tr{
+  display: block;
+  border: 2pt solid black;
+}
+td{
+  padding: 5pt; /* aggiunge un padding ai cellulari */
+}
+.post{
+  width: 200pt;
+  height: 200pt;
+  padding:0pt;
+}
+.pDestro{
+  border-left: 1pt solid black;
+}
+.commento{
+  font-family:"Agency FB";
+}
+.cFinePagina{
+  font-size: 20pt;
+  font-family: "Arial Narrow";
+}
+
+
+/* Aggiungi la seguente regola CSS per definire la configurazione del layout */
+@media only screen and (max-width: 768px) {
+  /* Configurazione per schermi con larghezza inferiore a 768px (come smartphone) */
+  table {
+    width: auto; /* Rimuovi la larghezza specifica */
+  }
+  td {
+    width: auto; /* Rimuovi la larghezza specifica */
+    padding: 10pt; /* Aggiungi padding per rendere i testi più leggibili */
+  }
+  .post {
+    width: 100%; /* Imposta la larghezza della immagine sul 100% della cella */
+    height: auto; /* Imposta l'altezza della immagine automaticamente */
+    padding: 0pt; /* Rimuovi il padding */
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  /* Configurazione per schermi con larghezza compresa tra 768px e 1024px (come tablet) */
+  table {
+    width: 90%; /* Imposta la larghezza della tabella al 90% della larghezza dello schermo */
+  }
+  td {
+    width: auto; /* Rimuovi la larghezza specifica */
+    padding: 10pt; /* Aggiungi padding per rendere i testi più leggibili */
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  /* Configurazione per schermi con larghezza superiore a 1024px (come desktop) */
+  table {
+    width: 80%; /* Imposta la larghezza della tabella al 80% della larghezza dello schermo */
+  }
+}
