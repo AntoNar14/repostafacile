@@ -1,7 +1,13 @@
+html{
+  background-color: rgb(174, 216, 255);
+}
 .titolo{
   text-align: center;
   font-family: 'Courier New', Courier, monospace;
   font-size: 35pt;
+}
+img{
+  pointer-events: none;
 }
 table {
   width: 800pt;
@@ -24,7 +30,7 @@ td{
   border-left: 1pt solid black;
 }
 .commento{
-  font-family:"Agency FB";
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .cFinePagina{
   font-size: 20pt;
